@@ -39,5 +39,8 @@ jobs:
           name: Run tests
           # This assumes pytest is installed via the install-package step above
           command: pytest --alluredir=allure-results
+      - run:
+          name: Archive results
+          comand: zip -r allure-results.zip allure-results
       - store_artifacts:
-          path: allure-results/
+          path: allure-results.zip
