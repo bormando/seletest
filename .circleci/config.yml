@@ -40,4 +40,4 @@ jobs:
           # This assumes pytest is installed via the install-package step above
           command: pytest --alluredir=allure-results
       - store_artifacts:
-          path: /allure-results
+          path: allure-results/
