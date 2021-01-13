@@ -8,7 +8,7 @@
 > pip install -r requirements.txt
 
 ### Run tests
-> pytest alluredir=allure-results 
+> pytest --alluredir=allure-results 
 
 ### Report scripts
 Generate Allure report:
