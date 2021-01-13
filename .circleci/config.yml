@@ -41,6 +41,6 @@ jobs:
           command: pytest --alluredir=allure-results
       - run:
           name: Archive results
-          comand: zip -r allure-results.zip allure-results
+          command: zip -r allure-results.zip allure-results
       - store_artifacts:
           path: allure-results.zip
