@@ -15,5 +15,5 @@ class TestSearch:
         input_field.send_keys(Keys.ENTER)
         results = browser.find_elements(By.CSS_SELECTOR, ".mw-search-result")
         results_number = len(results)
-        # time.sleep(3)
+        # time.sleep(3) 1
         assert results_number > 0, F"expected to find any results"
